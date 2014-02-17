@@ -6,6 +6,7 @@ class PostsController < ApplicationController
     @user_list = @users.map do |user|
       [ user.name, user.id ]
     end
+    render :new
   end
 
   def create
