@@ -1,0 +1,10 @@
+<h1><%= @user.name %> (<%= @user.email %>)</h1>
+
+<h3><%= @user.name %>'s Posts</h3>
+
+<div>
+  <% @user.posts.each do |post| %>
+    <div><%= post.title %></div>
+    <div><%= post.body %></div>
+  <% end -%>
+</div>

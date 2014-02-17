@@ -19,5 +19,9 @@ module Railsgirlshouston
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # For this tutorial application we have disabled the security feature known
+    # as "strong parameters". For a real application, just remove this.
+    config.action_controller.permit_all_parameters = true
   end
 end
