@@ -64,7 +64,7 @@ th, td{
 }
 
 /* You can even style when a form element is in focus (when you've clicked on it)! */
-.form-section input[type="text"]:focus{
+.form-section input[type="text"]:focus, .form-section textarea:focus{
   outline: none;
   border-color: #333333;
 }
