@@ -2,22 +2,22 @@
 
 <%= form_for @post do |f| %>
 
-  <div>
+  <div class="form-section">
    <%= f.label :user_id %>
    <%= f.select :user_id, options_for_select(User.all.map { |user| [ user.name, user.id ] }) %>
   </div>
 
-  <div>
+  <div class="form-section">
    <%= f.label :title %>
    <%= f.text_field :title %>
   </div>
 
-  <div>
+  <div class="form-section">
     <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
 
-  <div>
+  <div class="form-section">
     <%= f.submit 'Post It!' %>
   </div>
 

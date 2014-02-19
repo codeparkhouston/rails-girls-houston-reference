@@ -2,17 +2,17 @@
 
 <%= form_for @user do |f| %>
 
-  <div>
+  <div class="form-section">
     <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
 
-  <div>
+  <div class="form-section">
     <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
 
-  <div>
+  <div class="form-section">
     <%= f.submit 'Create User' %>
   </div>
 

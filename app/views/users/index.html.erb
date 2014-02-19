@@ -1,20 +1,22 @@
 <h1>Listing All Users</h1>
 
-<div>
-
-  <div>
-    <div>Name</div>
-    <div>Email</div>
-    <div>Postcount</div>
-  </div>
-
-  <% @users.each do |user| %>
-    <div>
-      <div><%= user.name %></div>
-      <div><%= user.email %></div>
-      <div><%= user.posts.count %></div>
-      <div><%= link_to 'Delete User', user_path(user), method: 'delete' %></div>
-    </div>
-  <% end -%>
-
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Postcount</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.posts.count %></td>
+        <td><%= link_to 'Delete User', user_path(user), method: 'delete' %></td>
+      </tr>
+    <% end -%>
+  </tbody>
+</table>
