@@ -8,7 +8,23 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="navigation-bar">
+	<ul>
+		<li>
+			<a href="/users">List All Users</a>
+		</li>
+		<li>
+			<a href="/users/new">Make New User</a>
+		</li>
+		<li>
+			<a href="/posts/new">Make New Post</a>
+		</li>
+	</ul>
+</div>
+
+<div class="page-body">
+	<%= yield %>	
+</div>
 
 </body>
 </html>
