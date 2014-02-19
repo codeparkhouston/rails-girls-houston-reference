@@ -87,6 +87,11 @@ input[type="text"]:focus, textarea:focus{
 }
 
 
+/* Each post should look like...*/
+.post{
+  border-bottom: 1px solid #CCCCCC;
+}
+
 
 /* Navigation bar styles */
 .navigation-bar ul{
