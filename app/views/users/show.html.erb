@@ -6,5 +6,6 @@
   <% @user.posts.each do |post| %>
     <div><%= post.title %></div>
     <div><%= post.body %></div>
+    <div><img src="<%= post.attachment_url %>" /></div>
   <% end -%>
 </div>
