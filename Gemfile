@@ -32,7 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Carrierwave allows for image file uploading
 gem 'carrierwave'
+
+# Allow for uploading different sizes of an image
+gem 'rmagick'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
