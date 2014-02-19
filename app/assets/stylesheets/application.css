@@ -89,9 +89,13 @@ th, td{
 }
 .navigation-bar li{
   display: inline-block;
-  padding: 7px;
   margin: 7px;
   background: #CCCCCC;
+}
+.navigation-bar a{
+  display: block;
+  padding: 7px;
+  text-decoration: none;
 }
 .navigation-bar li:hover{
   background: #DDDDDD;
