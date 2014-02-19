@@ -32,3 +32,6 @@ tmtags
 .sass-cache/
 public/assets/
 .env*
+
+# Ignore file uploads
+public/uploads
