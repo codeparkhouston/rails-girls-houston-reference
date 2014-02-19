@@ -3,4 +3,6 @@ class Post < ActiveRecord::Base
 
   validates_presence_of :title
   validates_presence_of :body
+
+  mount_uploader :attachment, ImageUploader
 end
