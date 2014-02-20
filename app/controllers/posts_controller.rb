@@ -2,8 +2,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
 
-    @users = User.all.to_a
-    @user_list = @users.map do |user|
+    @user_list = User.all.map do |user|
       [ user.name, user.id ]
     end
     render :new

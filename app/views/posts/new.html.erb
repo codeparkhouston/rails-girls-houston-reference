@@ -4,7 +4,7 @@
 
   <div>
    <%= f.label :user_id %>
-   <%= f.select :user_id, options_for_select(User.all.map { |user| [ user.name, user.id ] }) %>
+   <%= f.select :user_id, options_for_select(@user_list) %>
   </div>
 
   <div>
