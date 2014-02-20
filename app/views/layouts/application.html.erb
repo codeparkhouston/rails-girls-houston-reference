@@ -8,7 +8,23 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="navigation-bar">
+	<ul>
+		<li>
+      <%= link_to "List All Users", users_path %>
+		</li>
+		<li>
+      <%= link_to "Make New User", new_user_path %>
+		</li>
+		<li>
+      <%= link_to "Make New Post", new_post_path %>
+		</li>
+	</ul>
+</div>
+
+<div class="page-body">
+	<%= yield %>	
+</div>
 
 </body>
 </html>

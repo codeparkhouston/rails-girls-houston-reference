@@ -8,6 +8,106 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require_tree .
+ *= require_self
  */
+
+
+
+/* This is a comment in the css. */
+
+/* The format for styling elements is as follows:
+
+a-selector-here-for-an-element {
+  style-property-name : value;
+  another-style-property-name : value;
+}
+
+Let's see how it works!
+*/
+
+
+/* This styles the <body> element */
+body{
+  max-width : 1040px;
+  margin : auto;
+  font-size: 14px;
+}
+
+/* Table Styles */
+/* This styles the <th> and <td> elements. */
+th, td{
+  padding: 2px 8px;
+  text-align: left;
+}
+
+
+
+/* Form Styles */
+/* The . in front of form-section means that this is selecting elements with class = "form-section" */
+.form-section{
+  margin-bottom: 14px;
+}
+
+/* This selector is saying, for an element with the class = "form-section", style elements
+  that are the element, <label> within the element with class = "form-section" like so.
+ */
+.form-section label{
+  display: block;
+  line-height: 28px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="text"], textarea{
+  border: 1px solid #CCCCCC;
+  line-height: 18px;
+  padding: 2px 4px;
+}
+
+/* You can even style when a form element is in focus (when you've clicked on it)! */
+input[type="text"]:focus, textarea:focus{
+  outline: none;
+  border-color: #333333;
+}
+
+/* Rails creates this class, "field_with_errors," to put around our form elements when the input is wrong.
+  Notice this class uses underscores in its name.
+  It is good practice to name classes using dashes, like the other classes in this stylesheet.
+*/
+.field_with_errors{
+  color: #CC0000;
+}
+.field_with_errors input[type="text"], .field_with_errors textarea{
+  border-color: #990000;
+}
+.field_with_errors input[type="text"]:focus, .field_with_errors textarea:focus{
+  outline: none;
+  border-color: #333333;
+}
+
+
+/* Each post should look like...*/
+.post{
+  border-bottom: 1px solid #CCCCCC;
+}
+
+
+/* Navigation bar styles */
+.navigation-bar ul{
+  list-style: none;
+  padding: 0;
+}
+.navigation-bar li{
+  display: inline-block;
+  margin: 7px;
+  background: #CCCCCC;
+}
+.navigation-bar a{
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+}
+.navigation-bar li:hover{
+  background: #DDDDDD;
+}
