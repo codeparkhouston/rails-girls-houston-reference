@@ -1,3 +1,0 @@
-== Rails Girls Houston 2014 Reference Implementation
-
-For the project that Rails Girls Participants should check out to get started, please see: https://github.com/codeparkhouston/rails-girls-houston
