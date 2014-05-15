@@ -4,6 +4,6 @@
 
 <% @user.posts.each do |post| %>
   <div class="post">
-    <p><%= post.body %></p>
+    <p><%= post.parsed_body %></p>
   </div>
 <% end -%>
