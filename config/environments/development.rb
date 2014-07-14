@@ -27,3 +27,9 @@ Railsgirlshouston::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 end
+
+class ActionDispatch::Request
+  def remote_ip
+    "75.148.191.126" # Houston                                                                                                                                                                                                                                                                                     
+  end
+end
