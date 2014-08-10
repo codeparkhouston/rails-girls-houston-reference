@@ -30,4 +30,17 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def edit
+    @user = User.find(params[:id])
+    render :edit
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(params[:user])
+      render :show
+    else
+      render :edit
+    end
+  end
 end
